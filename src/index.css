@@ -13,8 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Merriweather", serif;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 a {
@@ -36,7 +35,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .flexStart {
   display: flex;
   justify-content: flex-start;
@@ -71,7 +69,7 @@ a {
 .primaryText {
   color: #1f3e72;
   font-weight: bold;
-  /* font-size: 2rem; */
+  font-size: 2rem;
 }
 
 .secondaryText {
@@ -97,6 +95,8 @@ a {
   cursor: pointer;
   transform:scale(1.1);
 }
+
+
 /* media queries */
 @media (min-width: 1536px) {
   .innerWidth {

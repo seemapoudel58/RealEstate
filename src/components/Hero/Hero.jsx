@@ -2,8 +2,11 @@ import React from 'react'
 
 const hero = () => {
   return (
-    <div>hero</div>
+    <section className="hero-wrapper">
+
+    </section>
+
   )
 }
 
-export default hero
+export default hero;
