@@ -1,7 +1,6 @@
 .App {
     position: relative;
     overflow-x: clip;
-    background: var(--black); /* Apply the background color here */
   }
   
   .white-gradient {

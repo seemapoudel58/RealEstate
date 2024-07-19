@@ -1,5 +1,6 @@
 .h-wrapper {
   color: white;
+  background: var(--black);
 }
 .flexCenter.h-container {
   justify-content: space-between;
@@ -7,11 +8,43 @@
   padding-bottom: 1rem;
   color: var(--secondary);
 }
-
-.h-menu {
-  gap: 2rem;
+.h-wrapper.h-menu{
+  display: none;
 }
 
-.h-menu > *:hover {
-  cursor: pointer;
+
+
+@media (min-width: 768px){
+  
+  
+  .h-menu {
+    display:block;
+    gap: 2rem;
+  }
+  
+  .h-menu > *:hover {
+    cursor: pointer;
+  }
 }
+/* 
+/* @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .h-menu {
+    color: var(--black);
+    position: absolute;
+    gap: 2rem;
+    font-weight: 500;
+    flex-direction: column;
+    right: 4rem;
+    top: 3rem;
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    transition: all 200ms ease;
+    align-items: flex-start;
+    padding: 3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  }
+} 

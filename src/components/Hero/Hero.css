@@ -2,8 +2,8 @@
   padding-top:2rem;
   color: white;
   position: relative;
-  z-index: 1;
   padding-bottom: 2rem;
+  background: var(--black);
 }
 
 .flexCenter.hero-container {
@@ -65,8 +65,8 @@
 }
 
 .image-container {
-  width: 25rem;
-  height: 30rem;
+  width: 28rem;
+  height: 33rem;
   overflow: hidden;
   border-radius: 15rem 15rem 0 0;
   border: 8px solid rgba(255, 255, 255, 0.12);
