@@ -1,9 +1,17 @@
-.c-container{
+.flexCenter.c-container{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
+    
 }
 .c-container>img{
     width: 9rem;
 }
+
+@media  (min-width:1024px) {
+    .flexCenter.c-container {
+      justify-content: space-between;
+    }
+    
+  }

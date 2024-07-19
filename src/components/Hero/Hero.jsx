@@ -34,21 +34,21 @@ const Hero = () => {
             <div className="flexColStart  stat">
               <span style={{ paddingBottom: "0.25rem" }}>
                 <CountUp start={8800} end={9000} duration={4} />
-                <span style={{ marginLeft: "0.25rem" }}>+</span>
+                <span style={{ marginLeft: "0.5rem" }}>+</span>
               </span>
               <span className="secondaryText">Premium Products</span>
             </div>
             <div className="flexColStart stat">
               <span style={{ paddingBottom: "0.25rem" }}>
                 <CountUp start={1950} end={2000} duration={4} />
-                <span style={{ marginLeft: "0.25rem" }}>+</span>
+                <span style={{ marginLeft: "0.5rem" }}>+</span>
               </span>
               <span className="secondaryText">Happy Customer</span>
             </div>
             <div className="flexColStart stat">
               <span style={{ paddingBottom: "0.25rem" }}>
                 <CountUp end={28} duration={4} />
-                <span style={{ marginLeft: "0.25rem" }}>+</span>
+                <span style={{ marginLeft: "0.5rem" }}>+</span>
               </span>
               <span className="secondaryText">Award Winning</span>
             </div>
