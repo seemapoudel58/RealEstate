@@ -78,6 +78,7 @@ a {
 .secondaryText {
   color: rgb(140 139 139);
   font-size: 1rem;
+  line-height: 1.5;
 }
 .orangeText {
   color: orange;
