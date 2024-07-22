@@ -6,6 +6,7 @@ import Residencies from "./components/Residencies/Residencies";
 import Values from "./components/Values/Values";
 import Contact from "./components/Contact/Contact";
 import GetStarted from "./components/GetStarted/GetStarted";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Values />
       <Contact/>
       <GetStarted/>
+      <Footer/>
     </div>
   );
 }

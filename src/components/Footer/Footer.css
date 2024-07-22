@@ -1,0 +1,30 @@
+.f-left{
+    margin-bottom:2rem;
+    gap:17px;
+}
+.f-right{
+    gap:0.4rem;
+    
+}
+.f-menu{
+    display: flex;
+    justify-content: space-around;
+    gap:1.4rem;
+    align-items: center;
+    margin-top:1.4rem;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .f-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flexColCenter.f-left{
+        align-items: flex-start;
+    }
+    .flexColCenter.f-right{
+        align-items: flex-start;
+    }
+}
