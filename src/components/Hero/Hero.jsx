@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
         <div className="flexColStart hero-left">
-          <div className="hero-title">
+          <div className="width hero-title">
             <div className="orange-circle" />
             <motion.h1
             initial={{ y: "2rem", opacity: 0 }}
@@ -22,7 +22,7 @@ const Hero = () => {
               <br /> Property
             </motion.h1>
           </div>
-          <div className="flexColStart secondaryText flexhero-des">
+          <div className="flexColStart secondaryText ">
             <span>Find a variety of properties that suit you very easilty</span>
             <span>Forget all difficulties in finding a residence for you</span>
           </div>
