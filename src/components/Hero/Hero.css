@@ -1,7 +1,6 @@
 .hero-wrapper {
-  padding-top:2rem;
+  padding-top:0.1rem;
   color: white;
-  position: relative;
   padding-bottom: 2rem;
   background: var(--black);
 }

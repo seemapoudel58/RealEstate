@@ -1,15 +1,23 @@
-import React from 'react';
-import './Header.css'
+import React, { useState } from "react";
+import { BiMenuAltRight, BiX } from "react-icons/bi";
+import "./Header.css";
+
 const Header = () => {
+  const [menuOpened, setMenuOpened] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpened((prev) => !prev);
+  };
+
   const menuItems = [
-    { href: '#', text: 'Residencies' },
-    { href: "#", text: "Our Value" },
-    { href: "#", text: "Contact Us" },
-    { href: "#", text: "Get Started" },
-    { href: "#", text: "Contact", isButton: true }
+    { href: "#residencies", text: "Residencies" },
+    { href: "#value", text: "Our Value" },
+    { href: "#contact-us", text: "Contact Us" },
+    { href: "#get-started", text: "Get Started" },
+    { href: "mailto:zainkeepscode@gmail.com", text: "Contact", isButton: true },
   ];
 
-  const renderItems = (item, index) => { 
+  const renderItems = (item, index) => {
     if (item.isButton) {
       return (
         <button key={index} className="button">
@@ -18,17 +26,35 @@ const Header = () => {
       );
     }
     return (
-      <a key={index} href={item.href}>{item.text}</a>
+      <a key={index} href={item.href} className="menu-link">
+        {item.text}
+      </a>
     );
   };
 
   return (
-    <section className=" h-wrapper">
-      <div className=" flexCenter paddings innerWidth h-container">
+    <section className="h-wrapper">
+      <div className="flexCenter innerWidth paddings h-container">
         <img src="./logo.png" alt="logo" width={100} />
-        <div className="flexCenter h-menu ">
-          {menuItems.map(renderItems)}
+
+        <div className="menu-icon" onClick={toggleMenu}>
+          <BiMenuAltRight size={30} />
         </div>
+        <div className="  desktop-menu">
+          <div className="flexCenter">
+
+        {menuItems.map(renderItems)}
+          </div>
+        </div>
+        {menuOpened && (
+          <nav className="flexCenter h-menu">
+            <div className="menu-header">
+              <BiX className="close-icon" onClick={() => setMenuOpened(false)} size={30} />
+            </div>
+            {menuItems.map(renderItems)}
+          </nav>
+        ) }
+       
       </div>
     </section>
   );

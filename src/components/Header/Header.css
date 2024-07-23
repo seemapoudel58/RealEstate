@@ -1,50 +1,60 @@
 .h-wrapper {
-  color: white;
   background: var(--black);
+  color: white;
 }
-.flexCenter.h-container {
+.flexCenter.h-container{
+  display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: var(--secondary);
 }
-.h-wrapper.h-menu{
+
+.h-menu {
+  background: white;
+  color: black;
+  flex-direction: column;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32vh;
+  height: 100vh;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.close-icon {
+  cursor: pointer;
+  color: black;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+.menu-header {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display:block;
+}
+.desktop-menu {
   display: none;
 }
+@media (min-width: 768px) {
 
-
-
-@media (min-width: 768px){
-  
-  
-  .h-menu {
-    display:block;
-    gap: 2rem;
+  .menu-header {
+    display: none; 
   }
-  
-  .h-menu > *:hover {
-    cursor: pointer;
+
+  .menu-icon {
+    display: none;
+  }
+
+  .desktop-menu{
+    display: block;
+    padding: 2rem;
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+
   }
 }
-/* 
-/* @media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-  .h-menu {
-    color: var(--black);
-    position: absolute;
-    gap: 2rem;
-    font-weight: 500;
-    flex-direction: column;
-    right: 4rem;
-    top: 3rem;
-    background: white;
-    display: flex;
-    border-radius: 10px;
-    transition: all 200ms ease;
-    align-items: flex-start;
-    padding: 3rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-  }
-} 
