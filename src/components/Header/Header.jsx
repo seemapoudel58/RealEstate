@@ -14,7 +14,7 @@ const Header = () => {
     { href: "#value", text: "Our Value" },
     { href: "#contact-us", text: "Contact Us" },
     { href: "#get-started", text: "Get Started" },
-    { href: "mailto:zainkeepscode@gmail.com", text: "Contact", isButton: true },
+    { href: "mailto:simapoudel6@gmail.com", text: "Contact", isButton: true },
   ];
 
   const renderItems = (item, index) => {

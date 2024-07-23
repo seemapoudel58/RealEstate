@@ -22,6 +22,7 @@
     max-height:80%;
     margin-top: 1rem;
   }
+ 
   
   .accordionItem {
     background: white;
@@ -37,7 +38,10 @@
     max-width:448px;
   }
 
-  
+  .accordionBody{
+    padding:1rem;
+   }
+
   .flexCenter.accordionButton {
     background: white;
     padding: 1rem;
@@ -46,12 +50,13 @@
     gap:1rem;
 
 
+
   }
 
   .icon {
     background: #eeeeff;
     border-radius: 5px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 
   }
   
@@ -60,7 +65,7 @@
   }
   
   .accordionButton .primaryText{
-      font-size: 0.7rem;
+      font-size: 0.8rem;
   }
   
   @media screen and (min-width: 400px) {
@@ -68,9 +73,7 @@
         padding: 4px;
         font-size: 1.3rem;
     }
-   .accordionBody{
-    padding:1rem;
-   }
+   
     .accordionButton .primaryText {
         font-size: 1rem;
     }
